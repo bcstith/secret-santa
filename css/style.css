@@ -1,0 +1,122 @@
+/**
+#9B0101 - Dark Red
+
+
+**/
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+  width: 114rem;
+  margin: 0 auto;
+}
+
+
+.top--header {
+  font-size: 5.2rem;
+  font-family: 'Crimson Text', serif;
+  font-weight: 700;
+  color: #9B0101;
+  padding: 2.5rem 0 1.0rem 0;
+  border-bottom: 3px solid #000;
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: url(../img/santa_img_new.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: #9B0101;
+  height: 85vh;
+}
+
+.jumbotron-text {
+  font-family: 'Mountains of Christmas', serif;
+  font-size: 5.4rem;
+  font-weight: 700;
+  letter-spacing: 1.2;
+  color: #FFF;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform:translate(-50%, -50%);
+  text-align: center;
+}
+
+.jumbotron-text-lg {
+  font-size: 15.4rem;
+}
+
+.wish-list-header {
+  font-family: inherit;
+  font-size: 7.2rem;
+  color: #9B0101;
+  font-weight: 700;
+  text-align: center;
+  margin: 3.4rem 0;
+}
+
+.wish-list-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  row-gap: 40px;
+  column-gap: 40px;
+}
+
+.wish-list-box {
+  border: 1px solid #adb5bd;
+  border-radius: 8px;
+  box-shadow: 0 2rem 5rem rgba(#000, .2);
+}
+
+.wish-list-box-header {
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #e9ecef;
+}
+
+.wish-list-list {
+  list-style-type: none;
+  font-size: 2.4rem;
+  color: #9B0101;
+  font-weight: 700;
+  padding: 3.5rem 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+}
+
+.wish-list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer {
+  margin-top: 4.2rem;
+  background-color: #000;
+  height: 12rem;
+}
