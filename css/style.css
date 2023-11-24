@@ -115,8 +115,10 @@ body {
   gap: 10px;
 }
 
+
 .footer {
   margin-top: 4.2rem;
   background-color: #000;
   height: 12rem;
+  width: 100%;
 }
