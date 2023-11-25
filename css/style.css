@@ -32,7 +32,7 @@ body {
     margin: 0;
   }
 
-  @media only screen and (max-width: 25em){
+  @media only screen and (max-width: 31.25em){
     width: 100%;
     margin: 0;
   }
@@ -53,7 +53,7 @@ main {
   text-align: center;
   
 
-  @media only screen and (max-width: 25em){
+  @media only screen and (max-width: 31.25em){
     padding: .5rem;
     font-size: 2.4rem;
     display: block;
@@ -74,17 +74,18 @@ main {
   background-color: #9B0101;
   height: 85vh;
 
-  @media only screen and (max-width: 25em){
+  @media only screen and (max-width: 31.25em){
     background-image: linear-gradient(
       to right bottom,
       rgba(red, 0.8),
       rgba(red, 0.8)
     ), url('');
     margin: 0;
+    height: 30vh;
+    clip-path: polygon(0 0, 100% 0, 100% 25vh, 0 100%);
     max-width: 100%;
     width: 100%;
     text-align: center;
-    height: 55vh;
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -109,7 +110,7 @@ main {
   }
   
 
-  @media only screen and (max-width: 25em){
+  @media only screen and (max-width: 31.25em){
     font-size: 2.3rem;
     top: 10%;
     left: 20%;
@@ -120,7 +121,7 @@ main {
 .jumbotron-text-lg {
   font-size: 8.5rem;
 
-  @media only screen and (max-width: 25em){
+  @media only screen and (max-width: 31.25em){
     font-size: 4.3rem;
   }
 }
@@ -133,8 +134,9 @@ main {
   text-align: center;
   margin: 3.4rem 0;
 
-  @media only screen and (max-width: 25em){
+  @media only screen and (max-width: 31.25em){
     font-size: 3.2rem;
+    margin-top: 2.2rem;
   }
 }
 
@@ -150,7 +152,7 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media only screen and (max-width: 25em){
+  @media only screen and (max-width: 31.25em){
     grid-template-columns: 1fr;
     row-gap: 0;
     column-gap: 0;
@@ -163,7 +165,7 @@ main {
   box-shadow: 0 2rem 2rem rgba(#000, .2);
   overflow: hidden;
 
-  @media only screen and (max-width: 25em){
+  @media only screen and (max-width: 31.25em){
     margin-bottom: 2rem;
   }
 }
