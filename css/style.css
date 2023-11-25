@@ -4,14 +4,14 @@
 
 **/
 
-*,
-*::after,
-*::before {
-  padding: 0;
+* {
   margin: 0;
-  box-sizing: inherit;
+  padding: 0;
 }
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -26,44 +26,103 @@ body {
 .container {
   width: 114rem;
   margin: 0 auto;
+
+  @media only screen and (max-width: 56.25em){
+    width: 95rem;
+    margin: 0;
+  }
+
+  @media only screen and (max-width: 25em){
+    width: 100%;
+    margin: 0;
+  }
+}
+
+main {
+  margin-bottom: 3.6rem;
 }
 
 
 .top--header {
-  font-size: 5.2rem;
+  font-size: 4.4rem;
   font-family: 'Crimson Text', serif;
   font-weight: 700;
   color: #9B0101;
   padding: 1.5rem 0 1.0rem 0;
   border-bottom: 3px solid #000;
   text-align: center;
+  
+
+  @media only screen and (max-width: 25em){
+    padding: .5rem;
+    font-size: 2.4rem;
+    display: block;
+  }
+} 
+
+.main-logo {
+  color: #343a40;
+  line-height: 1.1;
+
 }
 
 .jumbotron {
   background-image: url(../img/santa_img_new.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
   background-color: #9B0101;
   height: 85vh;
+
+  @media only screen and (max-width: 25em){
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(red, 0.8),
+      rgba(red, 0.8)
+    ), url('');
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    height: 55vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .jumbotron-text {
   font-family: 'Mountains of Christmas', serif;
-  font-size: 5.4rem;
+  font-size: 4.5rem;
   font-weight: 700;
   letter-spacing: 1.2;
   color: #FFF;
-  position: absolute;
   position: absolute;
   top: 50%;
   left: 30%;
   transform:translate(-50%, -50%);
   text-align: center;
+
+
+  @media only screen and (max-width: 56.25em){
+    font-size: 3.5rem;
+
+  }
+  
+
+  @media only screen and (max-width: 25em){
+    font-size: 2.3rem;
+    top: 10%;
+    left: 20%;
+    transform:translate(0, 0);
+  }
 }
 
 .jumbotron-text-lg {
-  font-size: 15.4rem;
+  font-size: 8.5rem;
+
+  @media only screen and (max-width: 25em){
+    font-size: 4.3rem;
+  }
 }
 
 .wish-list-header {
@@ -73,6 +132,10 @@ body {
   font-weight: 700;
   text-align: center;
   margin: 3.4rem 0;
+
+  @media only screen and (max-width: 25em){
+    font-size: 3.2rem;
+  }
 }
 
 .wish-list-boxes {
@@ -81,25 +144,41 @@ body {
 
   row-gap: 40px;
   column-gap: 40px;
+  margin: 0 2.5rem;
+
+  @media only screen and (max-width: 56.25em){
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media only screen and (max-width: 25em){
+    grid-template-columns: 1fr;
+    row-gap: 0;
+    column-gap: 0;
+  }
 }
 
 .wish-list-box {
   border: 1px solid #adb5bd;
   border-radius: 8px;
-  box-shadow: 0 2rem 5rem rgba(#000, .2);
+  box-shadow: 0 2rem 2rem rgba(#000, .2);
+  overflow: hidden;
+
+  @media only screen and (max-width: 25em){
+    margin-bottom: 2rem;
+  }
 }
 
 .wish-list-box-header {
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   font-weight: 700;
   text-align: center;
   padding: 1.5rem;
-  background-color: #e9ecef;
+  background-color: #868e96;
 }
 
 .wish-list-list {
   list-style-type: none;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   color: #9B0101;
   font-weight: 700;
   padding: 3.5rem 2.5rem;
@@ -119,6 +198,16 @@ body {
 .footer {
   margin-top: 4.2rem;
   background-color: #000;
-  height: 12rem;
+  height: 4rem;
+  margin: 0;
+  max-width: 100%;
   width: 100%;
+}
+
+.yellow-color {
+  color: #ffd43b;
+}
+
+.red-color {
+  color: #9B0101;
 }
