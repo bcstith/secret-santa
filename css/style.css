@@ -69,19 +69,16 @@ main {
 .jumbotron {
   background-image: url(../img/santa_img_new.jpg);
   background-size: cover;
+  background-position: right;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
   background-color: #9B0101;
   height: 85vh;
 
   @media only screen and (max-width: 31.25em){
-    background-image: linear-gradient(
-      to right bottom,
-      rgba(red, 0.8),
-      rgba(red, 0.8)
-    ), url('');
     height: 40vh;
     clip-path: polygon(0 0, 100% 0, 100% 35vh, 0 100%);
+    background-position: center;
   }
 }
 
