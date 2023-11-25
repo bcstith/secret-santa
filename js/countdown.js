@@ -25,6 +25,7 @@ function calculateChristmasCountdown(){
   var nextChristmasDate = nextChristmasYear + '-12-25T00:00:00.000Z';
   var christmasDay = new Date(nextChristmasDate);
 
+
   //Get the difference in seconds between the two days.
   var diffSeconds = Math.floor((christmasDay.getTime() - now.getTime()) / 1000);
 
@@ -38,8 +39,8 @@ function calculateChristmasCountdown(){
       //Convert these seconds into days, hours, minutes, seconds.
       days = Math.floor(diffSeconds / (3600*24));
       diffSeconds  -= days * 3600 * 24;
-      hours   = Math.floor(diffSeconds / 3600);
-      diffSeconds  -= hours * 3600;
+      hours   = Math.floor(diffSeconds / 1800);
+      diffSeconds  -= hours * 1800;
       minutes = Math.floor(diffSeconds / 60);
       diffSeconds  -= minutes * 60;
       seconds = diffSeconds;
