@@ -215,3 +215,7 @@ main {
   text-decoration: none;
   cursor: pointer;
 }
+
+.list-item-link:hover {
+  color: #ffd43b;
+}
